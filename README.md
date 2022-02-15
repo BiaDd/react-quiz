@@ -1,3 +1,41 @@
+# Vocabulary Quiz React
+
+Simple React project for studying Japanese.
+
+## Demo
+
+(react-quiz-eight-sand.vercel.app)
+
+## Getting Started
+
+### Dependencies
+
+* Used Node, React.
+
+
+### Installing
+
+* Clone the repository or download the zip
+
+
+### Executing program
+
+* Go to quiz in Reactquiz and do
+* 
+```
+npm start
+```
+
+### To Do
+- [X] create a question
+- [X] create a check answer
+- [X] create an end 
+- [X] improve ux (enter to submit and automatically hover over text)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
