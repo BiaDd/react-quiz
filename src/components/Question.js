@@ -1,9 +1,9 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useState} from "react"; //{useEffect, useRef, useState} from "react";
 
 const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
 
    
-    const [error, setError] = useState('');
+    //const [error, setError] = useState('');
     const [answer, setAnswer] = useState('');
 
 
@@ -13,7 +13,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     } 
 
     const getNextHandler = (event) => {
-        const userInput = event.target.value;
+        //const userInput = event.target.value;
         //asdsda
         
         onAnswerUpdate(prevState => [...prevState, {q : data.question, a: answer}]);
@@ -46,12 +46,12 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
                     </div>
                 </div>
                 </form>
-                {error && <div className="has-text-danger">{error}</div>}
+                
                 <button id="myBtn" className="button is-link mt-4" onClick={getNextHandler}>Submit</button>
             </div>
         </div>
     );
 }
 
-
+//<!---{error && <div className="has-text-danger">{error}</div>}--->
 export default Question;
