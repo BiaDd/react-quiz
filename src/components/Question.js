@@ -1,10 +1,12 @@
-import React, {useState} from "react"; //{useEffect, useRef, useState} from "react";
+import React, {useState, useRef} from "react"; //{useEffect, useRef, useState} from "react";
 
 const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
 
    
     //const [error, setError] = useState('');
     const [answer, setAnswer] = useState('');
+
+    const inputAnswer = useRef()
 
 
 
@@ -15,9 +17,9 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     const getNextHandler = (event) => {
         //const userInput = event.target.value;
         //asdsda
-        
         onAnswerUpdate(prevState => [...prevState, {q : data.question, a: answer}]);
         setAnswer('');
+        inputAnswer.current.focus();
         if(activeQuestion < numberOfQuestions-1) {
             onSetActiveQuestion(activeQuestion+1);
         } else {
@@ -41,13 +43,16 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
                     <h2 className="mb-5">{data.question}</h2>
                     <div className="control">
                         <label className="has-background-light">
-                            <input type="text" name="answer" value={answer} onChange={changeHandler} onKeyPress={handleKeypress} autoFocus/>  
+                            <input ref={inputAnswer} 
+                            type="text" name="answer" value={answer} 
+                            onChange={changeHandler} 
+                             autoFocus/>  
                         </label> 
                     </div>
                 </div>
                 </form>
                 
-                <button id="myBtn" className="button is-link mt-4" onClick={getNextHandler}>Submit</button>
+                <button id="myBtn" className="button is-link mt-4" onClick={getNextHandler} onKeyPress={handleKeypress} >Submit</button>
             </div>
         </div>
     );
