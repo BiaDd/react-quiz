@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react"; //{useEffect, useRef, useState} from "react";
 
 const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
+    
 
    
     //const [error, setError] = useState('');

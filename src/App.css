@@ -14,7 +14,24 @@ body,
 }
 
 .App .card {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   text-align: center;
 }
+
+label.radio {
+  display: block;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+label.radio+.radio {
+  margin-left: 0;
+}
+
+label.radio input {
+  margin-right: 10px;
+}
+
