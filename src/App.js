@@ -12,8 +12,8 @@ import quizData from './data/quiz.json';
 
 
 let interval;
-//quizData.data.sort((a,b) => 0.5 - Math.random())
-//quizData.data2.sort((a,b) => 0.5 - Math.random())
+quizData.data.sort((a,b) => 0.5 - Math.random())
+quizData.data2.sort((a,b) => 0.5 - Math.random())
 
 const App = () => {
   
