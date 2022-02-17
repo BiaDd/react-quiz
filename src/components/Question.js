@@ -18,6 +18,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     const getNextHandler = (event) => {
         //const userInput = event.target.value;
         //asdsda
+        event.preventDefault();
         onAnswerUpdate(prevState => [...prevState, {q : data.question, a: answer}]);
         setAnswer('');
         inputAnswer.current.focus();
@@ -28,8 +29,9 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
         }
     }
 
-    const handleKeypress = e => {
+    const handleKeypress = (e) => {
         //it triggers by pressing the enter key
+        e.preventDefault();
       if (e.keyCode === 13) {
         getNextHandler();
       }
@@ -39,7 +41,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     return (
         <div className="card">
             <div className="card-content">
-                <form id="anser">
+                <form onSubmit={getNextHandler}>
                 <div className="content">
                     <h2 className="mb-5">{data.question}</h2>
                     <div className="control">
@@ -47,8 +49,10 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
                             <input ref={inputAnswer} 
                             type="text" name="answer" value={answer} 
                             onChange={changeHandler} 
-                             autoFocus/>  
-                        </label> 
+                             autoFocus/>
+                                
+                        </label>
+                        
                     </div>
                 </div>
                 </form>
