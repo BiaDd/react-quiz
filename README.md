@@ -4,7 +4,7 @@ Simple React project for studying Japanese.
 
 ## Demo
 
-(https://react-quiz-eight-sand.vercel.app/)
+(https://nihongo-quiz.vercel.app/)
 
 ## Getting Started
 
