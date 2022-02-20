@@ -21,16 +21,17 @@ const App = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  const [showModal2, setShowModal2] = useState(false);
   const [time, setTime] = useState(0);
 
   useEffect(() => {
-    if(step === 3) {
-      clearInterval(interval);
-    } else if (step === 5) {
+    if(step === 3 || step === 5) {
       clearInterval(interval);
     }
   }, [step]);
+
+  function setData(d) {
+    quizData.data=d;
+  }
 
   const quizStartHandler = () => {
     setStep(2);
@@ -39,6 +40,7 @@ const App = () => {
     }, 1000);
   }
 
+  
   const quizStartHandler2 = () => {
     setStep(4);
     interval = setInterval(() => {
@@ -47,7 +49,6 @@ const App = () => {
   }
 
   const resetClickHandler = () => {
-    
     setActiveQuestion(0);
     setAnswers([]);
     setStep(1);
@@ -56,7 +57,20 @@ const App = () => {
 
   return (
     <div className="App">
-      {step === 1 && <Start onQuizStart={quizStartHandler} onQuizStart2={quizStartHandler2} />}
+      {step === 1 &&     
+      <div className="card">
+          <div className="card-content">
+              <div className="content">
+                  <h1>練習が始めましょう</h1>
+                  <p>頑張りましょう！</p>
+                  <button id="write" className="button is-info is-medium" onClick={()=> setData(quizData.data), quizStartHandler}>Lesson 7-1 Vocab</button>
+                  <button id="select" className="button is-info is-medium" onClick={()=>setData(quizData.data2), quizStartHandler}>Lesson 8-1 vocab</button>
+                  <button id="select" className="button is-info is-medium" onClick={()=>setData(quizData.data2), quizStartHandler}>Lesson 8-2 vocab</button>
+                  <br></br><button id="select" className="button is-info is-medium" onClick={()=>setData(quizData.data2), quizStartHandler2}>Multiple Choice</button>
+              </div>
+          </div>
+      </div>
+      }
       {step === 2 && <Question 
         data={quizData.data[activeQuestion]}
         onAnswerUpdate={setAnswers}
@@ -66,9 +80,9 @@ const App = () => {
         onSetStep={setStep}
       />}
       {step === 4 && <MultipleQuestion 
-        data={quizData.data2[activeQuestion]}
+        data={quizData.data[activeQuestion]}
         onAnswerUpdate={setAnswers}
-        numberOfQuestions={quizData.data2.length}
+        numberOfQuestions={quizData.data.length}
         activeQuestion={activeQuestion}
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
@@ -80,22 +94,10 @@ const App = () => {
         onAnswersCheck={() => setShowModal(true)}
         time={time}
       />}
-      {step === 5 && <End 
-        results={answers}
-        data={quizData.data2}
-        onReset={resetClickHandler}
-        onAnswersCheck={() => setShowModal2(true)}
-        time={time}
-      />}
       {showModal && <Modal 
         onClose={() => setShowModal(false)}
         results={answers}
         data={quizData.data}
-      />}
-      {showModal2 && <Modal 
-        onClose={() => setShowModal2(false)}
-        results={answers}
-        data={quizData.data2}
       />}
     </div>
   );
