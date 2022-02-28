@@ -29,7 +29,7 @@ const MultipleQuestion = ({ data, onAnswerUpdate, numberOfQuestions, activeQuest
     if(activeQuestion < numberOfQuestions - 1) {
       onSetActiveQuestion(activeQuestion + 1);
     }else {
-      onSetStep(5);
+      onSetStep(3);
     }
   }
 
