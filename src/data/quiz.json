@@ -1,103 +1,161 @@
 {
-    "data": [
+    "tango7-1": [
         {
-            "question": "重視",
+            "question": "変化",
             "choice": "",
-            "answer": "じゅうし"
+            "answer": "へんか"
         },
         {
-            "question": "都会",
+            "question": "不快",
             "choice": "",
-            "answer": "とかい"
+            "answer": "ふかい"
         },
         {
-            "question": "癒やす",
+            "question": "思い切って",
             "choice": "",
-            "answer": "いやす"
+            "answer": "おもいきって"
         },        {
-            "question": "満足",
+            "question": "単に",
             "choice": "",
-            "answer": "まんぞく"
+            "answer": "たんに"
         },        {
-            "question": "満点",
+            "question": "逆に",
             "choice": "",
-            "answer": "まんてん"
+            "answer": "ぎゃくに"
         },        {
-            "question": "基本",
+            "question": "差",
             "choice": "",
-            "answer": "きほん"
+            "answer": "さ"
         },        {
-            "question": "常に",
+            "question": "壁",
             "choice": "",
-            "answer": "つねに"
+            "answer": "かべ"
         },        {
-            "question": "状態",
+            "question": "余裕",
             "choice": "",
-            "answer": "じょうたい"
+            "answer": "よゆう"
         },        {
-            "question": "策を練る",
+            "question": "刺激",
             "choice": "",
-            "answer": "さくをねる"
+            "answer": "しげき"
         },        {
-            "question": "総合",
+            "question": "辛い",
             "choice": "",
-            "answer": "そうごう"
+            "answer": "つらい"
         },        {
-            "question": "一位",
+            "question": "濃い",
             "choice": "",
-            "answer": "いちい"
+            "answer": "こい"
         },        {
-            "question": "精神",
+            "question": "厚さ",
             "choice": "",
-            "answer": "せいしん"
+            "answer": "あつさ"
         },        {
-            "question": "到着",
+            "question": "互い",
             "choice": "",
-            "answer": "とうちゃく"
+            "answer": "たがい"
         },        {
-            "question": "感激",
+            "question": "発展",
             "choice": "",
-            "answer": "かんげき"
+            "answer": "はってん"
         },        {
-            "question": "要望",
+            "question": "基準",
             "choice": "",
-            "answer": "ようぼう"
+            "answer": "きじゅん"
         },        {
-            "question": "喜び",
+            "question": "勇気",
             "choice": "",
-            "answer": "よろこび"
+            "answer": "ゆうき"
         },        {
-            "question": "提供",
+            "question": "正直",
             "choice": "",
-            "answer": "ていきょう"
+            "answer": "しょうじき"
         },        {
-            "question": "延長",
+            "question": "選択肢",
             "choice": "",
-            "answer": "えんちょう"
-        },        {
-            "question": "身振り手振り",
-            "choice": "",
-            "answer": "みぶりてぶり"
-        },        {
-            "question": "肩",
-            "choice": "",
-            "answer": "かた"
-        },        {
-            "question": "形",
-            "choice": "",
-            "answer": "かたち"
-        },        {
-            "question": "線",
-            "choice": "",
-            "answer": "せん"
-        }, {
-            "question": "磨き上げる",
-            "choice": "",
-            "answer": "みがきあげる"
+            "answer": "せんたくし"
         }
     ],
 
-    "data2": [
+    "def7-1": [
+        {
+            "question": "変化",
+            "choice": "",
+            "answer": "to change"
+        },
+        {
+            "question": "不快",
+            "choice": "",
+            "answer": "unpleasant"
+        },
+        {
+            "question": "思い切って",
+            "choice": "",
+            "answer": "to take the plunge and do"
+        },        {
+            "question": "単に",
+            "choice": "",
+            "answer": "simply"
+        },        {
+            "question": "逆に",
+            "choice": "",
+            "answer": "on the contrary; conversely"
+        },        {
+            "question": "差",
+            "choice": "",
+            "answer": "difference"
+        },        {
+            "question": "壁",
+            "choice": "",
+            "answer": "wall"
+        },        {
+            "question": "余裕",
+            "choice": "",
+            "answer": "room"
+        },        {
+            "question": "刺激",
+            "choice": "",
+            "answer": "to stimulate; to motivate"
+        },        {
+            "question": "辛い",
+            "choice": "",
+            "answer": "painful"
+        },        {
+            "question": "濃い",
+            "choice": "",
+            "answer": "thick;dense;strong"
+        },        {
+            "question": "厚さ",
+            "choice": "",
+            "answer": "thickness"
+        },        {
+            "question": "互い",
+            "choice": "",
+            "answer": "each other"
+        },        {
+            "question": "発展",
+            "choice": "",
+            "answer": "to develop"
+        },        {
+            "question": "基準",
+            "choice": "",
+            "answer": "standard"
+        },        {
+            "question": "勇気",
+            "choice": "",
+            "answer": "courage"
+        },        {
+            "question": "正直",
+            "choice": "",
+            "answer": "honestly"
+        },        {
+            "question": "選択肢",
+            "choice": "",
+            "answer": "choices"
+        }
+    ],
+
+    "mult": [
         {
           "question": "田中さんは初めて弁当会社の社長になって、新たな____を感じました。 ",
           "choices": ["責任感", "専門店", "良心"],
@@ -243,5 +301,399 @@
             "answer": "理解し合う"
         }
           
-      ]
+      ],
+
+      "tango8-1": [
+        {
+            "question": "重視",
+            "choice": "",
+            "answer": "じゅうし"
+        },
+        {
+            "question": "都会",
+            "choice": "",
+            "answer": "とかい"
+        },
+        {
+            "question": "癒やす",
+            "choice": "",
+            "answer": "いやす"
+        },        {
+            "question": "満足",
+            "choice": "",
+            "answer": "まんぞく"
+        },        {
+            "question": "満点",
+            "choice": "",
+            "answer": "まんてん"
+        },        {
+            "question": "基本",
+            "choice": "",
+            "answer": "きほん"
+        },        {
+            "question": "常に",
+            "choice": "",
+            "answer": "つねに"
+        },        {
+            "question": "状態",
+            "choice": "",
+            "answer": "じょうたい"
+        },        {
+            "question": "策を練る",
+            "choice": "",
+            "answer": "さくをねる"
+        },        {
+            "question": "総合",
+            "choice": "",
+            "answer": "そうごう"
+        },        {
+            "question": "一位",
+            "choice": "",
+            "answer": "いちい"
+        },        {
+            "question": "精神",
+            "choice": "",
+            "answer": "せいしん"
+        },        {
+            "question": "到着",
+            "choice": "",
+            "answer": "とうちゃく"
+        },        {
+            "question": "[~に]感激",
+            "choice": "",
+            "answer": "かんげき"
+        },        {
+            "question": "要望",
+            "choice": "",
+            "answer": "ようぼう"
+        },        {
+            "question": "喜び",
+            "choice": "",
+            "answer": "よろこび"
+        },        {
+            "question": "提供",
+            "choice": "",
+            "answer": "ていきょう"
+        },        {
+            "question": "延長",
+            "choice": "",
+            "answer": "えんちょう"
+        },        {
+            "question": "身振り手振り",
+            "choice": "",
+            "answer": "みぶりてぶり"
+        },        {
+            "question": "肩",
+            "choice": "",
+            "answer": "かた"
+        },        {
+            "question": "形",
+            "choice": "",
+            "answer": "かたち"
+        },        {
+            "question": "線",
+            "choice": "",
+            "answer": "せん"
+        }, {
+            "question": "磨き上げる",
+            "choice": "",
+            "answer": "みがきあげる"
+        }
+    ],
+
+    "def8-1": [
+        {
+            "question": "重視",
+            "choice": "",
+            "answer": "to emphasize"
+        },
+        {
+            "question": "都会",
+            "choice": "",
+            "answer": "city"
+        },
+        {
+            "question": "癒やす",
+            "choice": "",
+            "answer": "to heal; to cure"
+        },        {
+            "question": "満足",
+            "choice": "",
+            "answer": "to satisfy"
+        },        {
+            "question": "満点",
+            "choice": "",
+            "answer": "full marks"
+        },        {
+            "question": "基本",
+            "choice": "",
+            "answer": "basis; foundation"
+        },        {
+            "question": "常に",
+            "choice": "",
+            "answer": "always"
+        },        {
+            "question": "状態",
+            "choice": "",
+            "answer": "condition"
+        },        {
+            "question": "策を練る",
+            "choice": "",
+            "answer": "to come up with ideas"
+        },        {
+            "question": "総合",
+            "choice": "",
+            "answer": "overall"
+        },        {
+            "question": "一位",
+            "choice": "",
+            "answer": "the first place"
+        },        {
+            "question": "精神",
+            "choice": "",
+            "answer": "spirit; mind"
+        },        {
+            "question": "到着",
+            "choice": "",
+            "answer": "to arrive"
+        },        {
+            "question": "[~に]感激",
+            "choice": "",
+            "answer": "to be deeply moved"
+        },        {
+            "question": "要望",
+            "choice": "",
+            "answer": "to request; to demand"
+        },        {
+            "question": "喜び",
+            "choice": "",
+            "answer": "pleasure;joy"
+        },        {
+            "question": "提供",
+            "choice": "",
+            "answer": "to provide"
+        },        {
+            "question": "延長",
+            "choice": "",
+            "answer": "by extension"
+        },        {
+            "question": "身振り手振り",
+            "choice": "",
+            "answer": "gestures"
+        },        {
+            "question": "肩",
+            "choice": "",
+            "answer": "shoulder"
+        },        {
+            "question": "形",
+            "choice": "",
+            "answer": "shape"
+        },        {
+            "question": "線",
+            "choice": "",
+            "answer": "line"
+        }, {
+            "question": "磨き上げる",
+            "choice": "",
+            "answer": "to polish"
+        }
+    ],
+
+    "tango8-2": [
+        {
+            "question": "空前",
+            "choice": "",
+            "answer": "くうぜん"
+        },
+        {
+            "question": "職人",
+            "choice": "",
+            "answer": "しょくにん"
+        },
+        {
+            "question": "開発",
+            "choice": "",
+            "answer": "かいはつ"
+        },        {
+            "question": "栄養",
+            "choice": "",
+            "answer": "えいよう"
+        },        {
+            "question": "瞬間",
+            "choice": "",
+            "answer": "しゅんかん"
+        },        {
+            "question": "想像",
+            "choice": "",
+            "answer": "そうぞう"
+        },        {
+            "question": "確信",
+            "choice": "",
+            "answer": "かくしん"
+        },        {
+            "question": "容器",
+            "choice": "",
+            "answer": "ようき"
+        },        {
+            "question": "密閉",
+            "choice": "",
+            "answer": "みっぺい"
+        },        {
+            "question": "共同",
+            "choice": "",
+            "answer": "きょうど"
+        },        {
+            "question": "弁当箱",
+            "choice": "",
+            "answer": "べんとうばこ"
+        },        {
+            "question": "伝統的",
+            "choice": "",
+            "answer": "でんとうてき"
+        },        {
+            "question": "かけ橋",
+            "choice": "",
+            "answer": "かけはし"
+        },        {
+            "question": "温める",
+            "choice": "",
+            "answer": "あたためる"
+        },        {
+            "question": "並べる",
+            "choice": "",
+            "answer": "ならべる"
+        },        {
+            "question": "詰める",
+            "choice": "",
+            "answer": "つめる"
+        },        {
+            "question": "受け入れる",
+            "choice": "",
+            "answer": "うけいれる"
+        },        {
+            "question": "取り入れる",
+            "choice": "",
+            "answer": "とりいれる"
+        },        {
+            "question": "目をつける",
+            "choice": "",
+            "answer": "めをつける"
+        },        {
+            "question": "限られた",
+            "choice": "",
+            "answer": "かぎられた"
+        },        {
+            "question": "型",
+            "choice": "",
+            "answer": "がた"
+        },        {
+            "question": "風",
+            "choice": "",
+            "answer": "ふう"
+        }, {
+            "question": "柄",
+            "choice": "",
+            "answer": "がら"
+        }
+    ]
+    ,
+    
+    "def8-2": [
+        {
+            "question": "空前",
+            "choice": "",
+            "answer": "unprecedented"
+        },
+        {
+            "question": "職人",
+            "choice": "",
+            "answer": "craftsman"
+        },
+        {
+            "question": "開発",
+            "choice": "",
+            "answer": "to develop"
+        },        {
+            "question": "栄養",
+            "choice": "",
+            "answer": "nutrition"
+        },        {
+            "question": "瞬間",
+            "choice": "",
+            "answer": "moment"
+        },        {
+            "question": "想像",
+            "choice": "",
+            "answer": "to imagine"
+        },        {
+            "question": "確信",
+            "choice": "",
+            "answer": "to firmly believe"
+        },        {
+            "question": "容器",
+            "choice": "",
+            "answer": "container"
+        },        {
+            "question": "密閉",
+            "choice": "",
+            "answer": "to close"
+        },        {
+            "question": "共同",
+            "choice": "",
+            "answer": "cooperation; collaboration"
+        },        {
+            "question": "弁当箱",
+            "choice": "",
+            "answer": "bento box"
+        },        {
+            "question": "伝統的",
+            "choice": "",
+            "answer": "traditional"
+        },        {
+            "question": "かけ橋",
+            "choice": "",
+            "answer": "bridge"
+        },        {
+            "question": "温める",
+            "choice": "",
+            "answer": "to warm up"
+        },        {
+            "question": "並べる",
+            "choice": "",
+            "answer": "to line up; to put in order"
+        },        {
+            "question": "詰める",
+            "choice": "",
+            "answer": "to fill; to stuff"
+        },        {
+            "question": "受け入れる",
+            "choice": "",
+            "answer": "to accept"
+        },        {
+            "question": "取り入れる",
+            "choice": "",
+            "answer": "to adopt"
+        },        {
+            "question": "目をつける",
+            "choice": "",
+            "answer": "to have an eye on"
+        },        {
+            "question": "限られた",
+            "choice": "",
+            "answer": "limited"
+        },        {
+            "question": "型",
+            "choice": "",
+            "answer": "model"
+        },        {
+            "question": "風",
+            "choice": "",
+            "answer": "style"
+        }, {
+            "question": "柄",
+            "choice": "",
+            "answer": "pattern"
+        }
+    ]
+
 }
