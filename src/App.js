@@ -53,8 +53,8 @@ const App = () => {
     else if (e.target.id === "tango8-1") {
       datad = quizData['tango8-1'];
     }
-    else if (e.target.id === "def8-2") {
-      datad = quizData['def8-2'];
+    else if (e.target.id === "def8-1") {
+      datad = quizData['def8-1'];
     }
     else if (e.target.id === "tango8-2") {
       datad = quizData['tango8-2'];
