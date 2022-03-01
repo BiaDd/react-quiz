@@ -151,7 +151,7 @@
         },        {
             "question": "選択肢",
             "choice": "",
-            "answer": "choices"
+            "answer": "choice"
         }
     ],
 
