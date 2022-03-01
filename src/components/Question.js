@@ -48,7 +48,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
                         <label className="has-background-light">
                             <input ref={inputAnswer} 
                             type="text" name="answer" value={answer} 
-                            onChange={changeHandler} 
+                            onChange={changeHandler} autoComplete="off"
                              autoFocus/>
                                 
                         </label>
