@@ -694,6 +694,246 @@
             "choice": "",
             "answer": "pattern"
         }
+    ],
+    
+    "tango9-1": [
+        {
+            "question": "間を置く",
+            "choice": "",
+            "answer": "まをおく"
+        },
+        {
+            "question": "目が覚める",
+            "choice": "",
+            "answer": "めがさめる"
+        },
+        {
+            "question": "声をかける",
+            "choice": "",
+            "answer": "こえをかける"
+        },        {
+            "question": "沈める",
+            "choice": "",
+            "answer": "しずめる"
+        },        {
+            "question": "浮かぶ",
+            "choice": "",
+            "answer": "うかぶ"
+        },        {
+            "question": "黙る",
+            "choice": "",
+            "answer": "だまる"
+        },        {
+            "question": "存在",
+            "choice": "",
+            "answer": "そんざい"
+        },        {
+            "question": "正確",
+            "choice": "",
+            "answer": "せいかく"
+        },        {
+            "question": "時刻",
+            "choice": "",
+            "answer": "じこく"
+        },        {
+            "question": "真っ暗",
+            "choice": "",
+            "answer": "まっくら"
+        },        {
+            "question": "心臓",
+            "choice": "",
+            "answer": "しんぞう"
+        },        {
+            "question": "人間",
+            "choice": "",
+            "answer": "にんげん"
+        }
+    ],
+    
+    "def9-1": [
+        {
+            "question": "間を置く",
+            "choice": "",
+            "answer": "to give a pause"
+        },
+        {
+            "question": "目が覚める",
+            "choice": "",
+            "answer": "to wake up"
+        },
+        {
+            "question": "～「に」声をかける",
+            "choice": "",
+            "answer": "to call to"
+        },        {
+            "question": "～「を」沈める",
+            "choice": "",
+            "answer": "to sink; to submerge"
+        },        {
+            "question": "～「が」浮かぶ",
+            "choice": "",
+            "answer": "to float"
+        },        {
+            "question": "黙る",
+            "choice": "",
+            "answer": "to become silent; to shut up"
+        },        {
+            "question": "存在",
+            "choice": "",
+            "answer": "to exist"
+        },        {
+            "question": "正確",
+            "choice": "",
+            "answer": "accurate"
+        },        {
+            "question": "時刻",
+            "choice": "",
+            "answer": "time"
+        },        {
+            "question": "真っ暗",
+            "choice": "",
+            "answer": "completely dark"
+        },        {
+            "question": "心臓",
+            "choice": "",
+            "answer": "heart"
+        },        {
+            "question": "人間",
+            "choice": "",
+            "answer": "human"
+        }
+    ],
+
+    "tango9-2": [
+        {
+            "question": "倒れる",
+            "choice": "",
+            "answer": "たおれる"
+        },
+        {
+            "question": "思いつく",
+            "choice": "",
+            "answer": "おもいつく"
+        },
+        {
+            "question": "腕",
+            "choice": "",
+            "answer": "うで"
+        },        {
+            "question": "胸",
+            "choice": "",
+            "answer": "むね"
+        },        {
+            "question": "棚",
+            "choice": "",
+            "answer": "たな"
+        },        {
+            "question": "事件",
+            "choice": "",
+            "answer": "じけん"
+        },        {
+            "question": "恐怖",
+            "choice": "",
+            "answer": "きょうふ"
+        },        {
+            "question": "奇跡",
+            "choice": "",
+            "answer": "きせき"
+        },        {
+            "question": "態度",
+            "choice": "",
+            "answer": "たいど"
+        },        {
+            "question": "成長",
+            "choice": "",
+            "answer": "せいちょう"
+        },        {
+            "question": "悲観",
+            "choice": "",
+            "answer": "ひかん"
+        },        {
+            "question": "恋愛",
+            "choice": "",
+            "answer": "れんあい"
+        },        {
+            "question": "楽天的",
+            "choice": "",
+            "answer": "らくてんてき"
+        },        {
+            "question": "冷静",
+            "choice": "",
+            "answer": "れいせい"
+        },        {
+            "question": "不思議",
+            "choice": "",
+            "answer": "ふしぎ"
+        }
+    ],
+
+    "def9-2": [
+        {
+            "question": "～「が」倒れる",
+            "choice": "",
+            "answer": "to fall down"
+        },
+        {
+            "question": "思いつく",
+            "choice": "",
+            "answer": "to think of; to come up with"
+        },
+        {
+            "question": "腕",
+            "choice": "",
+            "answer": "arm"
+        },        {
+            "question": "胸",
+            "choice": "",
+            "answer": "chest"
+        },        {
+            "question": "棚",
+            "choice": "",
+            "answer": "shelf"
+        },        {
+            "question": "事件",
+            "choice": "",
+            "answer": "event; incident"
+        },        {
+            "question": "恐怖",
+            "choice": "",
+            "answer": "fear"
+        },        {
+            "question": "奇跡",
+            "choice": "",
+            "answer": "miracle"
+        },        {
+            "question": "態度",
+            "choice": "",
+            "answer": "attitude"
+        },        {
+            "question": "～「が」成長",
+            "choice": "",
+            "answer": "to grow"
+        },        {
+            "question": "悲観",
+            "choice": "",
+            "answer": "pessimism; disappointment"
+        },        {
+            "question": "恋愛",
+            "choice": "",
+            "answer": "love"
+        },        {
+            "question": "楽天的",
+            "choice": "",
+            "answer": "optimistic"
+        },        {
+            "question": "冷静",
+            "choice": "",
+            "answer": "calmly"
+        },        {
+            "question": "不思議",
+            "choice": "",
+            "answer": "strange; wonderful"
+        }
     ]
 
 }

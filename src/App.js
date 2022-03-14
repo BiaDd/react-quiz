@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-//import Start from './components/Start';
+import Start from './components/Start';
 import Question from './components/Question';
 import MultipleQuestion from "./components/Multiple";
 import End from './components/End';
@@ -62,6 +62,19 @@ const App = () => {
     else if (e.target.id === "def8-2") {
       datad = quizData['def8-2'];
     }
+    // lesson 9
+    else if (e.target.id === "tango9-1") {
+      datad = quizData['tango9-1'];
+    }
+    else if (e.target.id === "def9-1") {
+      datad = quizData['def9-1'];
+    }
+    else if (e.target.id === "tango9-2") {
+      datad = quizData['tango9-2'];
+    }
+    else if (e.target.id === "def9-2") {
+      datad = quizData['def9-2'];
+    }
     setStep(2);
     interval = setInterval(() => {
       setTime(prevTime => prevTime + 1);
@@ -77,33 +90,23 @@ const App = () => {
   }
 
   const resetClickHandler = () => {
+    for (var key in quizData){
+      quizData[key].sort((a,b) => 0.5 - Math.random());
+    }
     setActiveQuestion(0);
     setAnswers([]);
     setStep(1);
     setTime(0);
   }
 
+
+
   return (
     <div className="App">
-      {step === 1 &&       
-      <div className="card">
-          <div className="card-content">
-              <div className="content">
-                  <h1>練習が始めましょう</h1>
-                  <p>頑張りましょう！</p>
-                  <button id="tango7-1" className="button is-info is-medium" onClick={quizStartHandler}>Lesson 7-1 Hirigana</button><br></br>
-                  <button id="tango8-1" className="button is-info is-medium" onClick={quizStartHandler}>Lesson 8-1 Hirigana</button>
-                  <button id="tango8-2" className="button is-info is-medium" onClick={quizStartHandler}>Lesson 8-2 Hirigana</button>
-                  <br></br>
-                  <br></br><button id="select" className="button is-info is-medium" onClick={quizStartHandler2}>Multiple Choice</button>
-                  <br></br>
-                  <br></br>
-                  <button id="def7-1" className="button is-info is-medium" onClick={quizStartHandler}>Lesson 7-1 Definitions</button>
-                  <button id="def8-1" className="button is-info is-medium" onClick={quizStartHandler}>Lesson 8-1 Definitions</button><br></br>
-                  <button id="def8-2" className="button is-info is-medium" onClick={quizStartHandler}>Lesson 8-2 Definitions</button>
-              </div>
-          </div>
-      </div> }
+      <div class="position-absolute top-0 start-0">
+        <button className="button is-info" onClick={resetClickHandler}>Home Page</button>
+      </div>
+      {step === 1 && <Start onQuizStart={quizStartHandler} onQuizStart2={quizStartHandler2}/>}
       {step === 2 && <Question 
         data={datad[activeQuestion]}
         onAnswerUpdate={setAnswers}
