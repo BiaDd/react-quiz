@@ -95,8 +95,8 @@ const App = () => {
     }
     setActiveQuestion(0);
     setAnswers([]);
-    setTime(0);
     setStep(2);
+    setTime(0);
   }
 
   const home = () => {
@@ -105,8 +105,8 @@ const App = () => {
     }
     setActiveQuestion(0);
     setAnswers([]);
-    setTime(0);
     setStep(1);
+    setTime(0);
     
   }
 
