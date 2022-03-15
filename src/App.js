@@ -95,6 +95,16 @@ const App = () => {
     }
     setActiveQuestion(0);
     setAnswers([]);
+    setStep(2);
+    setTime(0);
+  }
+
+  const home = () => {
+    for (var key in quizData){
+      quizData[key].sort((a,b) => 0.5 - Math.random());
+    }
+    setActiveQuestion(0);
+    setAnswers([]);
     setStep(1);
     setTime(0);
   }
@@ -104,7 +114,7 @@ const App = () => {
   return (
     <div className="App">
       <div class="position-absolute top-0 start-0">
-        <button className="button is-info" onClick={resetClickHandler}>Home Page</button>
+        <button className="button is-info" onClick={home}>Home Page</button>
       </div>
       {step === 1 && <Start onQuizStart={quizStartHandler} onQuizStart2={quizStartHandler2}/>}
       {step === 2 && <Question 
