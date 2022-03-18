@@ -76,12 +76,14 @@ const App = () => {
       datad = quizData['def9-2'];
     }
     setStep(2);
+    setTime(0);
     interval = setInterval(() => {
       setTime(prevTime => prevTime + 1);
     }, 1000);
   }
 
   const quizStartHandler2 = () => {
+    setTime(0);
     datad = quizData.mult
     setStep(4);
     interval = setInterval(() => {
