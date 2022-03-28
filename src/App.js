@@ -75,6 +75,19 @@ const App = () => {
     else if (e.target.id === "def9-2") {
       datad = quizData['def9-2'];
     }
+    // lesson 10
+    else if (e.target.id === "tango10-1") {
+      datad = quizData['tango10-1'];
+    }
+    else if (e.target.id === "def10-1") {
+      datad = quizData['def10-1'];
+    }
+    else if (e.target.id === "tango10-2") {
+      datad = quizData['tango10-2'];
+    }
+    else if (e.target.id === "def10-2") {
+      datad = quizData['def10-2'];
+    }
     setStep(2);
     setTime(0);
     interval = setInterval(() => {

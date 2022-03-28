@@ -888,6 +888,242 @@
             "choice": "",
             "answer": "strange; wonderful"
         }
+    ],
+    
+    "tango10-1": [
+        {
+            "question": "挙げる",
+            "choice": "",
+            "answer": "あげる"
+        },
+        {
+            "question": "探る",
+            "choice": "",
+            "answer": "さぐる"
+        },
+        {
+            "question": "得る",
+            "choice": "",
+            "answer": "える"
+        },
+        {
+            "question": "尋ねる",
+            "choice": "",
+            "answer": "たずねる"
+        },
+        {
+            "question": "実施",
+            "choice": "",
+            "answer": "じっし"
+        },
+        {
+            "question": "雇用",
+            "choice": "",
+            "answer": "こよう"
+        },
+        {
+            "question": "負担",
+            "choice": "",
+            "answer": "ふたん"
+        },
+        {
+            "question": "分担",
+            "choice": "",
+            "answer": "ぶんたん"
+        },
+        {
+            "question": "条件",
+            "choice": "",
+            "answer": "じょうけん"
+        },
+        {
+            "question": "平均",
+            "choice": "",
+            "answer": "へいきん"
+        },
+        {
+            "question": "収入",
+            "choice": "",
+            "answer": "じっし"
+        },
+        {
+            "question": "育児",
+            "choice": "",
+            "answer": "いくじ"
+        },
+        {
+            "question": "役割",
+            "choice": "",
+            "answer": "やくわり"
+        },
+        {
+            "question": "当然",
+            "choice": "",
+            "answer": "とうぜん"
+        },
+        {
+            "question": "要因",
+            "choice": "",
+            "answer": "よういん"
+        },
+        {
+            "question": "両立",
+            "choice": "",
+            "answer": "りょうりつ"
+        },
+        {
+            "question": "夫",
+            "choice": "",
+            "answer": "おっと"
+        },
+        {
+            "question": "妻",
+            "choice": "",
+            "answer": "つま"
+        },
+        {
+            "question": "主に",
+            "choice": "",
+            "answer": "おもに"
+        },
+        {
+            "question": "幼い",
+            "choice": "",
+            "answer": "おさない"
+        },
+        {
+            "question": "～率",
+            "choice": "",
+            "answer": "りつ"
+        },
+        {
+            "question": "～層",
+            "choice": "",
+            "answer": "そう"
+        },
+        {
+            "question": "～割",
+            "choice": "",
+            "answer": "わり"
+        }
+    ],
+
+    "def10-1": [
+        {
+            "question": "挙げる",
+            "choice": "",
+            "answer": "to raise; to give"
+        },
+        {
+            "question": "探る",
+            "choice": "",
+            "answer": "to investigate"
+        },
+        {
+            "question": "得る",
+            "choice": "",
+            "answer": "to get"
+        },
+        {
+            "question": "「～に」尋ねる",
+            "choice": "",
+            "answer": "to ask"
+        },
+        {
+            "question": "実施",
+            "choice": "",
+            "answer": "to carry out"
+        },
+        {
+            "question": "雇用",
+            "choice": "",
+            "answer": "to hire"
+        },
+        {
+            "question": "負担",
+            "choice": "",
+            "answer": "burden; load"
+        },
+        {
+            "question": "分担",
+            "choice": "",
+            "answer": "to share the load"
+        },
+        {
+            "question": "条件",
+            "choice": "",
+            "answer": "condition"
+        },
+        {
+            "question": "平均",
+            "choice": "",
+            "answer": "average"
+        },
+        {
+            "question": "収入",
+            "choice": "",
+            "answer": "income"
+        },
+        {
+            "question": "育児",
+            "choice": "",
+            "answer": "child rearing"
+        },
+        {
+            "question": "役割",
+            "choice": "",
+            "answer": "role"
+        },
+        {
+            "question": "当然",
+            "choice": "",
+            "answer": "of course"
+        },
+        {
+            "question": "要因",
+            "choice": "",
+            "answer": "factor"
+        },
+        {
+            "question": "両立",
+            "choice": "",
+            "answer": "to support at the same time; to go together"
+        },
+        {
+            "question": "夫",
+            "choice": "",
+            "answer": "husband"
+        },
+        {
+            "question": "妻",
+            "choice": "",
+            "answer": "wife"
+        },
+        {
+            "question": "主に",
+            "choice": "",
+            "answer": "mainly"
+        },
+        {
+            "question": "幼い",
+            "choice": "",
+            "answer": "very young; immature"
+        },
+        {
+            "question": "～率",
+            "choice": "",
+            "answer": "rate"
+        },
+        {
+            "question": "～層",
+            "choice": "",
+            "answer": "specific group of people"
+        },
+        {
+            "question": "～割",
+            "choice": "",
+            "answer": "percent"
+        }
     ]
 
 }

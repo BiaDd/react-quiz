@@ -45,6 +45,18 @@ const Start = ({ onQuizStart, onQuizStart2}) => {
                     </ul>
                 </div>
 
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="button is-info is-medium dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lesson 10
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button id="tango10-1" className="button is-info" onClick={onQuizStart}>Lesson 10-1 Hirigana</button>
+                    <button id="def10-1" className="button is-info" onClick={onQuizStart}>Lesson 10-1 Definitions</button>
+                    <button id="tango10-2" className="button is-info" onClick={onQuizStart}>Lesson 10-2 Hirigana</button>
+                    <button id="def10-2" className="button is-info" onClick={onQuizStart}>Lesson 10-2 Definitions</button>
+                    </ul>
+                </div>
+
                 <br></br>
                 <br></br><button id="select" className="button is-info is-medium" onClick={onQuizStart2}>Multiple Choice</button>
                 <br></br>
