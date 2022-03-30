@@ -122,7 +122,7 @@ const App = () => {
     setAnswers([]);
     setStep(1);
     setTime(0);
-    
+    clearInterval(interval);
   }
 
 
