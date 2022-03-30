@@ -944,7 +944,7 @@
         {
             "question": "収入",
             "choice": "",
-            "answer": "じっし"
+            "answer": "しゅんゆう"
         },
         {
             "question": "育児",
@@ -1123,6 +1123,243 @@
             "question": "～割",
             "choice": "",
             "answer": "percent"
+        }
+    ],
+
+
+    "tango10-2": [
+        {
+            "question": "対策",
+            "choice": "",
+            "answer": "たいさく"
+        },
+        {
+            "question": "傾向",
+            "choice": "",
+            "answer": "けいこう"
+        },
+        {
+            "question": "犯罪",
+            "choice": "",
+            "answer": "はんざい"
+        },
+        {
+            "question": "防犯",
+            "choice": "",
+            "answer": "ぼうはん"
+        },
+        {
+            "question": "報告",
+            "choice": "",
+            "answer": "ほうこく"
+        },
+        {
+            "question": "比較",
+            "choice": "",
+            "answer": "ひかく"
+        },
+        {
+            "question": "縮小",
+            "choice": "",
+            "answer": "しゅくしょう"
+        },
+        {
+            "question": "支出",
+            "choice": "",
+            "answer": "ししゅつ"
+        },
+        {
+            "question": "監視 ",
+            "choice": "",
+            "answer": "かんし"
+        },
+        {
+            "question": "設置",
+            "choice": "",
+            "answer": "せっち"
+        },
+        {
+            "question": "指摘",
+            "choice": "",
+            "answer": "してき"
+        },
+        {
+            "question": "公的",
+            "choice": "",
+            "answer": "こうてき"
+        },
+        {
+            "question": "援助",
+            "choice": "",
+            "answer": "えんじょ"
+        },
+        {
+            "question": "背景",
+            "choice": "",
+            "answer": "はいけい"
+        },
+        {
+            "question": "身近",
+            "choice": "",
+            "answer": "みぢか"
+        },
+        {
+            "question": "主義",
+            "choice": "",
+            "answer": "しゅぎ"
+        },
+        {
+            "question": "責任",
+            "choice": "",
+            "answer": "せきにん"
+        },
+        {
+            "question": "失業者",
+            "choice": "",
+            "answer": "しつぎょうしゃ"
+        },
+        {
+            "question": "果たす",
+            "choice": "",
+            "answer": "はたす"
+        },
+        {
+            "question": "許す",
+            "choice": "",
+            "answer": "ゆるす"
+        },
+        {
+            "question": "含む",
+            "choice": "",
+            "answer": "ふくむ"
+        },
+        {
+            "question": "欠かせない",
+            "choice": "",
+            "answer": "かかせない"
+        },
+        {
+            "question": "取り組み",
+            "choice": "",
+            "answer": "とりくみ"
+        }
+    ],
+
+    "def10-2": [
+        {
+            "question": "対策",
+            "choice": "",
+            "answer": "measure; provision"
+        },
+        {
+            "question": "傾向",
+            "choice": "",
+            "answer": "tendency"
+        },
+        {
+            "question": "犯罪",
+            "choice": "",
+            "answer": "crime"
+        },
+        {
+            "question": "防犯",
+            "choice": "",
+            "answer": "prevention of crime"
+        },
+        {
+            "question": "「～に」報告",
+            "choice": "",
+            "answer": "to report"
+        },
+        {
+            "question": "「～と」比較",
+            "choice": "",
+            "answer": "to compare"
+        },
+        {
+            "question": "縮小",
+            "choice": "",
+            "answer": "reduction"
+        },
+        {
+            "question": "支出",
+            "choice": "",
+            "answer": "to spend"
+        },
+        {
+            "question": "監視 ",
+            "choice": "",
+            "answer": "to watch"
+        },
+        {
+            "question": "「～に」設置",
+            "choice": "",
+            "answer": "to install"
+        },
+        {
+            "question": "指摘",
+            "choice": "",
+            "answer": "to point out"
+        },
+        {
+            "question": "公的",
+            "choice": "",
+            "answer": "public"
+        },
+        {
+            "question": "援助",
+            "choice": "",
+            "answer": "to support; to assist"
+        },
+        {
+            "question": "背景",
+            "choice": "",
+            "answer": "background"
+        },
+        {
+            "question": "身近",
+            "choice": "",
+            "answer": "familiar"
+        },
+        {
+            "question": "主義",
+            "choice": "",
+            "answer": "principle; -ism"
+        },
+        {
+            "question": "責任",
+            "choice": "",
+            "answer": "responsibility"
+        },
+        {
+            "question": "失業者",
+            "choice": "",
+            "answer": "unemployed people"
+        },
+        {
+            "question": "果たす",
+            "choice": "",
+            "answer": "to fulfill; to accomplish"
+        },
+        {
+            "question": "許す",
+            "choice": "",
+            "answer": "to tolerate; to forgive"
+        },
+        {
+            "question": "含む",
+            "choice": "",
+            "answer": "to include"
+        },
+        {
+            "question": "「～が」欠かせない",
+            "choice": "",
+            "answer": "indispensible"
+        },
+        {
+            "question": "取り組み",
+            "choice": "",
+            "answer": "attempt"
         }
     ]
 
