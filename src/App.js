@@ -7,7 +7,9 @@ import MultipleQuestion from "./components/Multiple";
 import End from './components/End';
 import Modal from './components/Modal';
 import quizData from './data/quiz.json';
-
+import { Dashboard } from './components/Dashboard';
+import { Button } from './components/Button.js'; 
+import Login from './components/Login';
 
 
 
@@ -25,8 +27,8 @@ for (var key in quizData){
 
 
 
-const App = () => {
-
+function App() {
+  const [components, setComponents] = useState(["Sample Component"]); 
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
@@ -128,13 +130,17 @@ const App = () => {
     clearInterval(interval);
   }
 
-
+  function addComponent() {
+    setComponents([...components, "Sample Component"]) 
+  } 
+  
 
   return (
     <div className="App">
-      <div class="position-absolute top-0 start-0">
-        <button className="button is-info" onClick={home}>Home Page</button>
-      </div>
+       <div> 
+          <Button onClick={addComponent} text="Call Component"/> 
+          {components.map((item, i) => ( <Login /> ))} 
+      </div> 
       {step === 1 && <Start onQuizStart={quizStartHandler} onQuizStart2={quizStartHandler2}/>}
       {step === 2 && <Question 
         data={datad[activeQuestion]}
