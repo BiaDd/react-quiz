@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from "react";
 
 import { formatTime } from "../utils";
+import { setScores, useGlobalState } from './State';
 
 const End = ({ results, data, onReset, onAnswersCheck, time }) => {
 
     const [correctAnswers, setCorrectAnswers] = useState(0);
-
+    const [scores] = useGlobalState('scores');
+    const [quiz] = useGlobalState('quiz');
+    var copy = {...scores};
     useEffect (() => {
         let correct = 0;
         results.forEach((result, index) => {
@@ -14,6 +17,8 @@ const End = ({ results, data, onReset, onAnswersCheck, time }) => {
             }
         });
         setCorrectAnswers(correct);
+        copy[quiz] = (correctAnswers/data.length) * 100
+        setScores(copy)
         // eslint-disable-next-line
     }, []);
 

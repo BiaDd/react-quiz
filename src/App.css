@@ -36,10 +36,13 @@ label.radio input {
 }
 
 button {
-  border: 2px solid black !important;
-  margin: 14px 28px 10px 10px;
-  font-size: 16px;
+  margin-top: 10px;
   cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
 }
 
 .AddButton {
@@ -50,17 +53,22 @@ button {
   border-radius: 15px;
   padding: 10px;
   margin: 10px;
+  
 }
 
 .Component {
-  color: white;
+  margin-top: 10px;
+  cursor: pointer;
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: darkblue;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 10px;
+  background: #ffffff;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.textBox {
+  background: #01c8d2;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 
@@ -84,19 +92,6 @@ input[type="submit"]:hover {
   background: #6cf0c2;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.login-form {
-  background-color: white;
-  padding: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: relative;
-  left: -1%;
-  top: -20px;
-}
 
 .list-container {
   display: flex;
@@ -112,9 +107,6 @@ input[type="submit"]:hover {
   margin-bottom: 20px;
 }
 
-.input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 10px;
+input, label {
+  display:block;
 }

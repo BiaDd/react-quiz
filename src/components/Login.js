@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import { setName, setPass, setLogin, setScores, useGlobalState } from './State';
 
-const baseURL = "https://fierce-headland-96292.herokuapp.com/users/"
+
 
 function Login() {
   // React States
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [data, setData] = React.useState(null);
+  const [baseURL] = useGlobalState('baseURL');
+  const [login] = useGlobalState('login');
   const errors = {
     uname: "invalid username or password",
     pass: "invalid password"
@@ -20,7 +20,10 @@ function Login() {
 
   const password = "mypass123"
   const saltRounds = 10
-
+  const [name] = useGlobalState('username');
+  const [passw] = useGlobalState('password');
+  const [scores] = useGlobalState('scores');
+  
   bcrypt.genSalt(saltRounds, function (saltError, salt) {
     if (saltError) {
       throw saltError
@@ -36,66 +39,69 @@ function Login() {
     }
   });
 
-  function getUser(user, pass) {
+  function getUser() {
     axios
-      .get(baseURL + "get", {
-        username: user,
-        password: pass
+      .post(baseURL + "get", {
+        username: name,
+        password: passw,
       })
       .then((response) => {
-        setData(response.data);
+        setScores(response.data.score);
+        setLogin(true)
+      });
+  }
+
+  function postUser() {
+    axios
+      .post(baseURL + "post", {
+        username: name,
+        password: passw,
+        score: scores
+      })
+      .then((response) => {
+        setLogin(true)
       });
   }
 
 
+ 
   const handleSubmit = (event) => {
-    //Prevent page reload
     event.preventDefault();
-
-    var { uname, pass } = document.forms[0];
-    getUser(uname.value, pass.value)
-    // Find user login info
-    //const result = checkPassword(uname.value, pass.value)
-    if(data) {
-      setIsSubmitted(true);
+    console.log(event.nativeEvent?.submitter.name)
+    if(event.nativeEvent?.submitter.name == "login"){
+      getUser()
     } else {
-      setErrorMessages({ name: "uname", message: errors.uname });
+      postUser()
     }
-  }; 
-
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
-
+    console.log(name + " " + passw);
+  }
   // JSX code for login form
   const renderForm = (
-    <div className="form">
-      <form onSubmit={handleSubmit}>
-        <div className="input-container">
-          <label>Username </label>
-          <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
-        </div>
-        <div className="input-container">
-          <label>Password </label>
-          <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
-        </div>
-        <div className="button-container">
-          <input type="submit" value = "Login" />
-          <input type="submit" value = "Create Account" />
-        </div>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <label>Username:
+      <input 
+        type="text" 
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      </label>
+      <label>Password:
+        <input 
+          type="password"
+          value={passw}
+          onChange={(e) => setPass(e.target.value)}
+        />
+        </label>
+        <input type="submit" name="login" value="Login" />
+        <input type="submit" name="signup" value="Signup" />
+    </form>
   );
 
   return (
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+        {login ? null : renderForm}
       </div>
     </div>
   );

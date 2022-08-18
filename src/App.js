@@ -7,10 +7,9 @@ import MultipleQuestion from "./components/Multiple";
 import End from './components/End';
 import Modal from './components/Modal';
 import quizData from './data/quiz.json';
-import { Dashboard } from './components/Dashboard';
-import { Button } from './components/Button.js'; 
+import Dashboard from './components/Dashboard';
 import Login from './components/Login';
-
+import { setName, setPass, setScores, setQuiz, useGlobalState } from './components/State';
 
 
 let interval;
@@ -34,7 +33,7 @@ function App() {
   const [answers, setAnswers] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [time, setTime] = useState(0);
-  
+  const [login] = useGlobalState("login")
 
   useEffect(() => {
     if(step === 3) {
@@ -95,6 +94,8 @@ function App() {
     interval = setInterval(() => {
       setTime(prevTime => prevTime + 1);
     }, 1000);
+
+    setQuiz(e.target.id)
   }
 
   const quizStartHandler2 = () => {
@@ -138,9 +139,8 @@ function App() {
   return (
     <div className="App">
        <div> 
-          <Button onClick={addComponent} text="Call Component"/> 
-          {components.map((item, i) => ( <Login /> ))} 
-      </div> 
+       {login ? <Dashboard /> : <Login />}
+       </div> 
       {step === 1 && <Start onQuizStart={quizStartHandler} onQuizStart2={quizStartHandler2}/>}
       {step === 2 && <Question 
         data={datad[activeQuestion]}
